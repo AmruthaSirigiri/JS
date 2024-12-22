@@ -1,0 +1,115 @@
+Que 1 :
+=======
+
+1. Problem Statement:
+Write a 'JavaScript' program that takes a month number (1-12) as input from the user and prints the number of days in that month using a switch statement. 
+If the user enters a number outside the range of 1-12, the program should display an error message.
+
+2. Explanation:
+You need to use a switch statement to handle different cases for each month.
+For months with 31 days (January, March, May, July, August, October, December), display "31 days".
+For months with 30 days (April, June, September, November), display "30 days".
+For February (month 2), print "28 or 29 days (depending on leap year)" as February can have 28 or 29 days.
+For any invalid month number (not between 1 and 12), print "Invalid month number!".
+
+3. Additional Considerations:
+The program should handle user input and validate it using a switch-case structure.
+No need for a leap year calculation in this basic program, but mention that leap years affect February’s day count.
+
+
+Sample input_1  : 3
+Sample output_1 : 31 days
+
+Sample input_2  : 2
+Sample output_2 : 28 or 29 days (depending on leap year)
+
+Sample input_3  : 11
+Sample output_3 : 30 days
+
+Code
+====
+function fun(n){
+    switch(n){
+        case 1: console.log("31 days"); break;
+        case 2: console.log("28 or 29 days (depending on leap year)"); break;
+        case 3: console.log("31 days"); break;
+        case 4: console.log("30 days"); break;
+        case 5: console.log("31 days"); break;
+        case 6: console.log("30 days"); break;
+        case 7: console.log("31 days"); break;
+        case 8: console.log("30 days"); break;
+        case 9: console.log("31 days"); break;
+        case 10: console.log("31 days"); break;
+        case 11: console.log("30 days"); break;
+        case 12: console.log("31 days"); break;
+        default: console.log("Invalid month number");
+    }
+}
+var n=+prompt("Enter the month number: ");
+fun(n);
+
+=====================================================================
+
+Que 2 :
+=======
+
+Write a 'JavaScript' program to perform a arithmetic operation on two numbers by using Switch Case. 
+Take the operators(+,-,*,/,%) as cases and take the input from the user that what kind of operation user want to do on two number.
+
+
+Sample input :
+
+Enter num1 :10
+Enter num2 :20
+Enter operation : *
+
+
+Sample output :
+
+Multiplication is :200
+
+code
+====
+function oper(a,b){
+    switch(o){
+        case '+': console.log("Addition is: "+(a+b)); break;
+        case '-': console.log("Substraction is: "+(a-b)); break;
+        case '*': console.log("Multiplication is: "+(a*b)); break;
+        case '/': console.log("Division is: "+(a/b)); break;
+        case '%': console.log("Mod is: "+(a%b)); break;
+        default: console.log("Invalid operater");
+    }
+}
+var a=+prompt("Enter num1 :");
+var b=+prompt("Enter num2 :");
+var o=prompt("Enter operation :");
+oper(a,b);
+=====================================================================
+
+Que 3 :
+=======
+
+Write a 'JavaScript' program to take user Id as 1001 and Password as 1010. Ask the user to enter his id, if the id is valid 
+
+then ask the user to enter his password ,if the password is correct then print the name of the user, otherwise 
+
+the program will print incorrect Password and if the Id doesn't exits, the program will print Incorrect Id.
+
+develop this program by using Switch case. 
+
+code
+====
+var id=+prompt("Enter the ID: ");
+switch(true){
+    case (id==1001):
+        var pass=+prompt("Enter the Password: ");
+        switch(true){
+            case (pass==1010):
+                console.log("Valid Password"); break;
+            default: console.log("Invalid Password");
+        }
+    break;
+    default: console.log("Invalid ID")
+}
+
+=====================================================================

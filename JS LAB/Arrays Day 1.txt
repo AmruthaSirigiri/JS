@@ -1,0 +1,126 @@
+Que 1 :
+---------
+	Write a 'JavaScript' program to store 10 elements in array and print them on a console take the inputs from the user.
+CODE
+====
+let s=+prompt("Enter the size: ");
+let a=[];
+for(let i=0;i<s;i++){
+    a[i]=+prompt("Enter the elements: ");
+}
+for(let i=0;i<s;i++){
+    console.log(a[i]);
+}
+
+
+Que 2 :
+--------
+	Write a 'JavaScript' program to sort the numbers array using selection sort technique without using predefined function.
+CODE
+====
+let s=+prompt("Enter the size: ");
+let a=[],t;
+for(let i=0;i<s;i++){
+    a[i]=+prompt("Enter the elements: ");
+}
+for(let i=0;i<=s-2;i++){
+    for(let j=i+1;j<=s-1;j++){
+        if(a[i]>a[j]){
+            t=a[i];
+            a[i]=a[j];
+            a[j]=t;
+        }
+    }
+}
+console.log("Selection sort technique");
+// for(let i=0;i<s;i++){
+//     console.log(a[i]);
+// }
+console.log(a);
+
+
+Que 3 : 
+--------
+	write a 'JavaScript' program to Sort the array [45, 3, 25, 78, 12] in ascending and descending order using predefined method.
+
+CODE
+====
+var arr=[45, 3, 25, 78, 12];
+console.log("Orginal array: "+arr);
+arr.sort((a,b)=>a-b);
+console.log("Ascending Order: "+arr);
+arr.sort((a,b)=>b-a);
+console.log("Descending Order: "+arr);
+
+Que 4 :
+--------
+	Write a 'JavaScript' program to Separat Strings and Numbers and print array using the forEach method.
+CODE
+====
+var mix=[1, 'hello', 2, 'world', 3, 'JavaScript', 4];
+var s=[];
+var n=[];
+mix.forEach(function (i) {
+    if(typeof i === 'string' ) s.push(i);
+    else if(typeof i === 'number') n.push(i);
+});
+console.log(s);
+console.log(n);
+
+Que 5 :
+-------
+	Write a 'JavaScript' program to Filter Even and Odd Numbers from array in separate arrays.
+CODE
+====
+var a=[1,2,3,4,5,6,7,8,9];
+var na=a.filter(function (ele){
+   return ele % 2 == 0;
+})
+var od=a.filter(function(ele1)
+{
+    return ele1 %2!=0;
+})
+console.log("Even: "+na);
+console.log("Odd: "+od);
+
+Que 6 :
+--------
+	Write a 'JavaScript' program to create an array of 10 image names an display the images on the webpage using forEach method.
+
+Que 7 :
+--------
+	Write a 'JavaScript' program to print Sum of All elements.
+CODE
+====
+
+var a=[1,2,3,4,5,6,7,8,9];
+var n=a.length;
+var sum=n*(n+1)/2;
+console.log("sum: ",sum);
+
+Que 8 :
+--------
+	Write a 'JavaScript' program Convert Names to Uppercase in array.
+CODE
+====
+var a=['ram','sham','siri','giri'];
+var uppercase = a.map((a)=>a.toUpperCase());
+console.log(uppercase);
+
+Que 9 :
+--------
+	Write a 'JavaScript' program to Remove Null and Undefined Values from array.
+
+
+Que 10 :
+--------
+	Write a 'JavaScript' program to Calculate Average from an Array elements.
+	sample input : const nums = [10, 20, 30, 40, 50];
+	output : 30
+
+Que 11 :
+--------
+	Write a 'JavaScript' program to Flatten a Nested Array.
+
+	sample input : const nestedArray = [1, [2, [3, [4, 5]]]];
+	output : [1, 2, 3, 4, 5]

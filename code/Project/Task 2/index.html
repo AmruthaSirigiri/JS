@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Catalog</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="books">
+        <input type="text" placeholder="Image URL" id="url"><br>
+        <input type="text" placeholder="Book Name" id="bname"><br>
+        <input type="text" placeholder="Author Name" id="aname"><br>
+        <input type="text" placeholder="Book Description" id="bdesc"><br>
+        <input type="number" min="1" max="5" placeholder="Rating (1-5)" id="rating"><br>
+    </div>
+    <div class="button-group">
+        <button onclick="getBook()">Submit</button>
+        <button onclick="resetFields()">Reset</button>
+        <button onclick="changeRandom()">Change Color</button>
+        <button onclick="toggleTheme()">Toggle Theme</button>
+    </div>
+    <div id="main"></div>
+    <script src="script.js"></script>
+</body>
+</html>

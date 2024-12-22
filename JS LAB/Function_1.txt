@@ -1,0 +1,102 @@
+Que 1 
+-----
+	Write a JavaScript program to Add Two Numbers using function.
+CODE
+====
+function add(a,b) {
+    return a+b;
+}
+console.log(add(2,3));
+======================================================================================
+Que 2
+-----
+	Write a JavaScript program to  Find the Maximum of Two Numbers using function.
+CODE
+====
+function max(a,b) {
+    (a>b)&&console.log(`Max = ${a}`)||(a<b)&&console.log(`Max = ${b}`);
+}
+max(2,3);
+======================================================================================
+Que 3 
+-----
+	Write a JavaScript program to Calculate the Square of a Number using function.
+CODE
+====
+function square(n) {
+    return n*n;
+}
+square(5);
+======================================================================================
+Que 4 
+-----
+	Write a JavaScript program to Check if a Number is Even using function.
+CODE
+====
+function even(num) {
+    return num%2==0?"Even":"Odd";    
+}
+console.log(even(5));
+======================================================================================
+Que 5 
+-----
+	Write a JavaScript program to Concatenate Two Strings using function.
+CODE
+====
+function con(str1,str2) {
+    return str1+" "+str2;
+}
+console.log(con("Amrutha","Sirigiri"));
+======================================================================================
+Que 6
+-----
+	Write a JavaScript program to Find the Absolute Value of a Number using function.
+CODE
+====
+function abso(num1) {
+    // return -(num1);
+    return Math.abs(num1);
+}
+console.log(abso(-3));
+======================================================================================
+Que 7 
+-----
+	Write a JavaScript program to Multiply Two Numbers using function.
+CODE
+====
+function mul(x,y) {
+    return x*y;
+}
+console.log(mul(2,3));
+======================================================================================
+Que 8 
+-----
+	Write a JavaScript program to Convert Fahrenheit to Celsius using function.
+CODE
+====
+function conv(f) {
+    let c=(f-32)*5/9;
+    return c;
+}
+console.log(conv(68));
+======================================================================================
+Que 9 
+-----
+	Write a JavaScript program to Calculate the Area of a Circle using function.
+CODE
+====
+function circle(r) {
+    return Math.PI*r**2;
+}
+console.log(circle(2));
+======================================================================================
+Que 10 
+-----
+	Write a JavaScript program to print the sum of n natural numbers using function.
+CODE
+====
+function sum(m) {
+    return (m * (m + 1)) / 2;
+}
+console.log(sum(4));
+======================================================================================
