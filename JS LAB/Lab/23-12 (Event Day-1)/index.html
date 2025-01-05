@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function getSelectedText(){
+        //     var text = document.getElementById("txt").value;
+        //     var output ;
+        //     output.innerHtml = text.value;
+        //     console.log(output);
+            
+            
+        // }
+
+        function selecttext(){
+            var text = document.getElementById("select").value;
+            console.log(text.value);
+            
+        }
+    </script>
+</head>
+<body> 
+    <!-- <div id="myDiv" onclick="clickDiv()">Click me!</div> -->
+     <!-- <input type="text" onkeydown="keyDown()" placeholder="enter name" id="name"><br><br> -->
+     <!-- <div class="in">
+        <label for="name">Name: </label>
+        <input type="text" placeholder="Enter name" id="name"><br><br>
+        <label for="age">Age: </label>
+        <input type="number" placeholder="Enter age" id="age"><br><br>
+        <label for="course">Course: </label>
+        <input type="text" placeholder="Enter course" id="course"><br><br>
+        <label for="institute">Institute name: </label>
+        <input type="text" placeholder="Enter institute name" id="institute"><br><br>
+        <button onclick="input()">submit</button>
+     </div>  -->
+     <!-- <textarea placeholder="enter so thing...." id="txt" onkeydown="keyDown()"></textarea> -->
+     <!-- <textarea placeholder="enter so thing...." id="txt" onkeyup="getSelectedText()"></textarea> -->
+      <textarea name="" onselect="selecttext()" id="select"></textarea>
+
+    <!-- <script src="./script.js"></script> -->
+</body>
+</html>

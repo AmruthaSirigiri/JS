@@ -113,7 +113,7 @@ function revnum(n) {
     // return parseInt(n.toString().split('').reverse().join(''));
     var rev=0;
     while(n!=0){
-        rev=rev*10+n%10;
+        rev=rev*10+n%10;//4
         n=Math.floor(n/10);
 
     }

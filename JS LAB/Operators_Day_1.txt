@@ -103,7 +103,7 @@ The area of the rectangle with length 4 and breadth 5 is: 20
 
 CODE
 ====
-let s=25,l=4,b=5
+let s=5,l=4,b=5
 console.log(`The area of the square with side ${s} is: `,s*s)
 console.log(`The area of the rectangle with length ${l} and breadth ${b} is:`,l*b)
 

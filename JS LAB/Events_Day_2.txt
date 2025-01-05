@@ -1,0 +1,188 @@
+Que 1 :
+--------
+
+	Change Body Color with Random Colors on Button Click
+
+You are creating a webpage where users can click a button to change the background color of the entire page to a random color. This can be useful for creating interactive and visually appealing web applications.
+
+Steps:
+
+	-> Create an HTML file with a button.
+
+	-> Add a JavaScript function that generates a random color.
+
+	-> Attach an event listener to the button to change the background color when clicked.
+HTML
+====
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="bg">Click me!</button>
+    <script src="./script.js"></script>
+</body>
+</html>
+
+JS
+==
+let bnt=document.getElementById('bg');
+bnt.addEventListener('click',() =>{
+    document.body.style.backgroundColor="#"+Math.round(Math.random()*100000000).toString(16);
+})
+
+============================================================================================
+
+Que 2 :
+--------
+	
+	Show Input Text in Paragraph
+
+You want to create a webpage where users can type into a text box, and the input will be dynamically displayed in a paragraph below the text box. This feature is commonly used in form validations or live search suggestions.
+
+Steps:
+
+	-> Create an HTML file with a text input box and a paragraph.
+
+	-> Add a JavaScript function to capture the input event.
+
+	-> Update the paragraph text with the input value.
+HTML
+====
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+    <input type="text" placeholder="type something..." id="i">
+    <p id="para"></p>
+    <script src="./script.js"></script>
+</body>
+</html>
+
+JS
+==
+let ib=document.getElementById('i');
+let p=document.getElementById('para');
+ib.addEventListener('input',() =>{
+    p.innerHTML=ib.value;
+   // p.innerHTML=iv;
+})
+============================================================================================
+Que 3 :
+--------
+
+	Change Image on Mouse Hover
+
+You want to create a webpage where an image changes when a user hovers over it. This can enhance user experience by providing interactive and dynamic content.
+
+Steps:
+
+	-> Create an HTML file with an image element.
+
+	-> Add a JavaScript function to handle the mouseover and mouseout events.
+
+	-> Change the image source on hover.
+
+HTML
+====
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="img" src="./7.jpg" alt="Image1">
+    <script src="./script.js"></script>
+</body>
+</html>
+
+
+JS
+==
+let srcimg=document.getElementById('img');
+srcimg.addEventListener('mouseover',() =>{
+    srcimg.src='./6.jpg';
+})
+srcimg.addEventListener('mouseout',() =>{
+    srcimg.src='./7.jpg';
+})
+=============================================================================================
+
+Que 4 :
+---------
+	Change Text Size and Color on Mouse Hover
+
+Steps:
+	-> Create a paragraph element in the HTML file.
+
+	-> Add event listeners for mouseover and mouseout events to change the text size and color when the mouse hovers over and leaves the text.
+
+HTML
+====
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para1">click</p>
+    <script src="./script.js"></script>
+</body>
+</html>
+
+JS
+==
+let s=document.getElementById('para1');
+s.addEventListener('mouseover',() =>{
+    s.style.fontSize='36px';
+    s.style.color="#00698f"
+})
+s.addEventListener('mouseout',() =>{
+    s.style.fontSize='24px';
+    s.style.color="#666"
+})
+=========================================================================================
+
+Que 5 :
+--------
+
+	Change Clipboard Text on Copy
+Steps:
+	-> Create a textarea element in the HTML file.
+
+	-> Add an event listener to the textarea for the copy event to change the clipboard text when the user copies content from the textarea.
+
+HTML
+====
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea id="t">Sample text...</textarea>
+    <script src="./script.js"></script>
+</body>
+</html>
+
+JS
+==
+let text=document.getElementById('t');
+text.addEventListener('copy',(e)=>{
+    let ct='Modified text: '+text.value;
+    e.ct.setData('text',ct);
+    e.preventDefault(); //e.preventDefault() to prevent the default copy behavior and use our custom clipboard text instead.
+})

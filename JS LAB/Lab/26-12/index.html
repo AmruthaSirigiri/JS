@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="count">0</h2> 
+    <button onclick="inc()">+</button>
+    <button onclick="dec()">-</button>
+    <button onclick="re()">Reset</button>
+
+    <h2>Simple Quiz Application</h2>
+    <p id="Question">this is question</p>
+    <button onclick="checkAnswer('option1')">Option 1</button>
+    <button onclick="checkAnswer('option2')">Option 2</button>
+    <button onclick="checkAnswer('option3')">Option 3</button>
+    <button onclick="checkAnswer('option4')">Option 4</button>
+    <p id="feedback"></p>
+
+    <div id="con">
+        <button id="r" onclick="red()">red</button>
+        <button id="y" onclick="yellow()">yellow</button>
+        <button id="g" oncanplay="green()">green</button>
+        <button id="b" onclick="black()">black</button>
+        <button id="o" onclick="orange()">orange</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

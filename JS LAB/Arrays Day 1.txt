@@ -87,6 +87,30 @@ Que 6 :
 --------
 	Write a 'JavaScript' program to create an array of 10 image names an display the images on the webpage using forEach method.
 
+HTML
+====
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <div id="mainDiv"></div>
+    <script src="./script.js"></script>
+</body>
+</html>
+JavaScript
+==========
+const imgNames=['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg'];
+const imgCon=document.getElementById('mainDiv');
+imgNames.forEach((imgName)=>{
+    const img=document.createElement('img');
+    img.src=imgName;
+    imgCon.appendChild(img);
+})
+
 Que 7 :
 --------
 	Write a 'JavaScript' program to print Sum of All elements.
@@ -111,6 +135,15 @@ Que 9 :
 --------
 	Write a 'JavaScript' program to Remove Null and Undefined Values from array.
 
+JavaScript
+==========
+const arr=[1, null, 2, undefined, 3, null, 4, 5, undefined];
+function remove(arr) {
+    return arr.filter(ele => ele !== null && ele !== undefined);
+}
+const newArr=remove(arr);
+console.log(newArr);
+
 
 Que 10 :
 --------
@@ -118,9 +151,25 @@ Que 10 :
 	sample input : const nums = [10, 20, 30, 40, 50];
 	output : 30
 
+JavaScript
+==========
+const a=[10,20,30,40,50];
+let sum=0,avg;
+a.forEach((ele)=>{
+    sum+=ele;
+    avg=sum/5;
+})
+console.log(sum);
+console.log(avg);
+
 Que 11 :
 --------
 	Write a 'JavaScript' program to Flatten a Nested Array.
 
 	sample input : const nestedArray = [1, [2, [3, [4, 5]]]];
 	output : [1, 2, 3, 4, 5]
+JavaScript
+==========
+const arr=[1, [2, [3, [4, 5]]]];
+const newArr=arr.flat(Infinity);
+console.log(newArr);

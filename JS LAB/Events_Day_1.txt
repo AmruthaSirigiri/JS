@@ -1,0 +1,140 @@
+que 1 :
+--------
+	Write a 'JavaScript' program to add the click event on the div.
+	
+	-> create a function clickDiv() and on click of the div print "Div is clicked" on the 	   console.
+HTML
+----
+<div id="myDiv" onclick="clickDiv()">Click me!</div>
+JavaScript
+-----------
+function clickDiv() {
+    console.log("Div is clicked");
+}
+=============================================================================================
+
+que 2 :
+--------
+	Write a 'JavaScript' program to add the keydown event to the input field.
+	
+	-> create a function keyDown() and on click of the input print "enter key pressed" on the console.
+HTML
+----
+<input type="text" onkeydown="keyDown()" placeholder="enter name" id="name"><br><br>
+JavaScript
+----------
+function keyDown(){
+    console.log("enter key pressed");
+}
+=============================================================================================
+
+que 3 :
+--------
+	Write a 'JavaScript' program to add the click event to the button.
+	
+	-> create a function getUserData().
+	-> take the 4 input fields which accepts the student info like name, age, course, institute name and print the information on console on click of the button.
+HTML
+----
+<div class="in">
+        <label for="name">Name: </label>
+        <input type="text" placeholder="Enter name" id="name"><br><br>
+        <label for="age">Age: </label>
+        <input type="number" placeholder="Enter age" id="age"><br><br>
+        <label for="course">Course: </label>
+        <input type="text" placeholder="Enter course" id="course"><br><br>
+        <label for="institute">Institute name: </label>
+        <input type="text" placeholder="Enter institute name" id="institute"><br><br>
+        <button onclick="input()">submit</button>
+</div>
+JavaScript
+----------
+function input(){
+    var n=document.getElementById('name');
+    var a=document.getElementById('age');
+    var c=document.getElementById('course');
+    var i=document.getElementById('institute');
+    console.log(n.value);
+    console.log(a.value);
+    console.log(c.value);
+    console.log(i.value); 
+}
+
+=============================================================================================
+
+que 4 :
+--------
+	Write a 'JavaScript' program to alert the user when submit button is clicked in the form.
+	
+	-> create a function alertUser() and on click of the submit button of the form alert user "form submitted".
+HTML
+----
+<div class="in">
+        <label for="name">Name: </label>
+        <input type="text" placeholder="Enter name" id="name"><br><br>
+        <label for="age">Age: </label>
+        <input type="number" placeholder="Enter age" id="age"><br><br>
+        <label for="course">Course: </label>
+        <input type="text" placeholder="Enter course" id="course"><br><br>
+        <label for="institute">Institute name: </label>
+        <input type="text" placeholder="Enter institute name" id="institute"><br><br>
+        <button onclick="input()">submit</button>
+</div>
+JavaScript
+----------
+function input(){
+    var n=document.getElementById('name');
+    var a=document.getElementById('age');
+    var c=document.getElementById('course');
+    var i=document.getElementById('institute');
+    console.log(n.value);
+    console.log(a.value);
+    console.log(c.value);
+    console.log(i.value);
+    alert("form submitted"); 
+}
+=============================================================================================
+
+que 5 :
+--------
+	Write a 'JavaScript' program to print the value of the textbox when text is entered.
+	
+	-> create a function printValue() and print the value of the textbox when some text is entered
+HTML
+----
+<textarea placeholder="enter so thing...." id="txt" onkeydown="keyDown()"></textarea>
+JavaScript
+----------
+function keyDown(){
+    var t=document.getElementById('txt');
+    console.log(t.value);
+}
+=============================================================================================
+que 6 :
+--------
+	Write a 'JavaScript' program to add mouseup event on the textarea and print the selected text .
+	
+	-> create a function getSelectedText() and on selection of the text print \the selected text on the console.
+=============================================================================================
+que 7 :
+--------
+	Write a 'JavaScript' program to add the copy event to the document and print the copied text on the console.
+	
+	-> create a function printCopiedEvent() and on copy of the text print the copied text on the console.
+
+=============================================================================================
+que 8 :
+--------
+	Write a 'JavaScript' program to add the copy event to the document and print the modified text on the console.
+	
+	-> create a function modifyCopiedText() and on copy of the text modify with "text cannot be copied" and print on the console.
+
+=============================================================================================
+
+que 9 :
+--------
+	Write a 'JavaScript' program to add the submit event to the form and print the form data on the console.
+	
+	-> create a function getFormData() and on submit of the form print the entire form data on the console.
+
+=============================================================================================	
